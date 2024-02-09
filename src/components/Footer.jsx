@@ -1,8 +1,8 @@
 const navigation = {
     main: [
       { name: 'About', href: '#' },
-      { name: 'Blog', href: '#' },
-      { name: 'Jobs', href: '#' },
+      { name: 'Phone: +2349058389203', href: '#' },
+      { name: 'Email: ubahobaah@gmail.com', href: '#' },
       { name: 'Press', href: '#' },
       { name: 'Accessibility', href: '#' },
       { name: 'Partners', href: '#' },
