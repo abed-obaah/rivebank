@@ -20,86 +20,40 @@ const navigation = [
   { name: 'Marketplace', href: '#' },
   { name: 'Company', href: '#' },
 ]
-const features = [
-  {
-    name: 'Push to deploy.',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: LockClosedIcon,
-  },
-  {
-    name: 'Simple queues.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.',
-    icon: ArrowPathIcon,
-  },
-  {
-    name: 'Advanced security.',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
-    icon: FingerPrintIcon,
-  },
-  {
-    name: 'Powerful API.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: Cog6ToothIcon,
-  },
-  {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ',
-    icon: ServerIcon,
-  },
-]
+
 const tiers = [
   {
-    name: 'Freelancer',
+    name: 'Customizable Solutions',
     id: 'tier-freelancer',
     href: '#',
-    priceMonthly: '$24',
-    description: 'The essentials to provide your best work for clients.',
+    description: "Tailor your experience with our highly customizable platform. Whether you\'re looking to streamline operations or enhance your online presence, we've got you covered",
     features: ['5 products', 'Up to 1,000 subscribers', 'Basic analytics', '48-hour support response time'],
     mostPopular: false,
   },
   {
-    name: 'Startup',
+    name: 'Advanced Analytics',
     id: 'tier-startup',
     href: '#',
-    priceMonthly: '$32',
-    description: 'A plan that scales with your rapidly growing business.',
+    description: 'Gain actionable insights with our advanced analytics. Understand your audience better and make informed decisions to drive your business forward',
     features: [
       '25 products',
       'Up to 10,000 subscribers',
       'Advanced analytics',
-      '24-hour support response time',
       'Marketing automations',
     ],
     mostPopular: true,
   },
   {
-    name: 'Enterprise',
+    name: '24/7 Support',
     id: 'tier-enterprise',
     href: '#',
-    priceMonthly: '$48',
-    description: 'Dedicated support and infrastructure for your company.',
+    description: ' Our dedicated support team is here for you around the clock. Get assistance whenever you need it, ensuring your operations run smoothly at all times.',
     features: [
-      'Unlimited products',
-      'Unlimited subscribers',
-      'Advanced analytics',
-      '1-hour, dedicated support response time',
+      '24/7-hour, dedicated support response time',
       'Marketing automations',
     ],
     mostPopular: false,
   },
-]
-const faqs = [
-  {
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  // More questions...
 ]
 const footerNavigation = {
   solutions: [
@@ -299,7 +253,7 @@ export default function App() {
               </div>
               <div className="text-center">
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                  Deploy to the cloud with confidence
+                Transforming Your Digital Experience
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-300">
                   Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
@@ -310,7 +264,7 @@ export default function App() {
                     href="#"
                     className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
                   >
-                    Get started
+                    Get Started Today
                   </a>
                   <a href="#" className="text-sm font-semibold leading-6 text-white">
                     Live demo <span aria-hidden="true">→</span>
@@ -379,7 +333,7 @@ export default function App() {
             <div className="mx-auto max-w-4xl text-center">
               <h2 className="text-base font-semibold leading-7 text-indigo-600">features</h2>
               <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                Pricing plans for teams of&nbsp;all&nbsp;sizes
+                Accomplish more with&nbsp;Our&nbsp;features
               </p>
             </div>
             <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
@@ -415,10 +369,6 @@ export default function App() {
                       ) : null}
                     </div>
                     <p className="mt-4 text-sm leading-6 text-gray-600">{tier.description}</p>
-                    <p className="mt-6 flex items-baseline gap-x-1">
-                      <span className="text-4xl font-bold tracking-tight text-gray-900">{tier.priceMonthly}</span>
-                      <span className="text-sm font-semibold leading-6 text-gray-600">/month</span>
-                    </p>
                     <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-600">
                       {tier.features.map((feature) => (
                         <li key={feature} className="flex gap-x-3">
@@ -438,7 +388,7 @@ export default function App() {
                       'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
                     )}
                   >
-                    Buy plan
+                    Learn More.
                   </a>
                 </div>
               ))}
@@ -587,38 +537,6 @@ export default function App() {
           </div>
         </div>
       </div>
-
-        {/* FAQ section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
-          <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
-            <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
-            <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
-              {faqs.map((faq) => (
-                <Disclosure as="div" key={faq.question} className="pt-6">
-                  {({ open }) => (
-                    <>
-                      <dt>
-                        <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
-                          <span className="text-base font-semibold leading-7">{faq.question}</span>
-                          <span className="ml-6 flex h-7 items-center">
-                            {open ? (
-                              <MinusSmallIcon className="h-6 w-6" aria-hidden="true" />
-                            ) : (
-                              <PlusSmallIcon className="h-6 w-6" aria-hidden="true" />
-                            )}
-                          </span>
-                        </Disclosure.Button>
-                      </dt>
-                      <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                        <p className="text-base leading-7 text-gray-600">{faq.answer}</p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-              ))}
-            </dl>
-          </div>
-        </div>
       </main>
 
       {/* Footer */}
